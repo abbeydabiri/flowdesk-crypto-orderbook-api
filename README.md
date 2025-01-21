@@ -31,7 +31,7 @@ Your mission, if you accept it, will be to fetch the BTC/USDT order book from th
 
 ### DOCUMENTATIONS
 - Binance api documentation: 
-  -https://developers.binance.com/docs/binance-spot-api-docs/web-socket-streams
+  - https://developers.binance.com/docs/binance-spot-api-docs/web-socket-streams
 - Kraken api documentation: 
   - https://docs.kraken.com/api/
 - Huobi api documentation: 

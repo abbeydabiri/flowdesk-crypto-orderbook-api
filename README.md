@@ -3,15 +3,15 @@
 </h1>
 
 ## 📜 Table of Contents
-- [Overview](#-overview)
-- [Goals](###-goals)
-- [Specifications](###-specifications)
-- [Technology stack](##-technology-stack)
-- [Added extras](##-added-extras)
-- [Future improvements](##future-improvements)
-- [How it works](##how-it-works)
-- [Run locally](##run-locally)
-- [Run Docker](##run-docker)
+- [Overview](#overview)
+- [Goals](#goals)
+- [Specifications](#specifications)
+- [Technology stack](#technology-stack)
+- [Added extras](#added-extras)
+- [Future improvements](#future-improvements)
+- [How it works](#how-it-works)
+- [Run locally](#run-locally)
+- [Run Docker](#run-docker)
 
 
 ## OVERVIEW

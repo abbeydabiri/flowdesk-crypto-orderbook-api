@@ -2,43 +2,58 @@
   Flowdesk Crypto Orderbook API
 </h1>
 
-### OVERVIEW
+## 📜 Table of Contents
+- [Overview](#-overview)
+- [Goals](###-goals)
+- [Specifications](###-specifications)
+- [Technology stack](##-technology-stack)
+- [Added extras](##-added-extras)
+- [Future improvements](##future-improvements)
+- [How it works](##how-it-works)
+- [Run locally](##run-locally)
+- [Run Docker](##run-docker)
+
+
+## OVERVIEW
 As a market maker, having a global price index is essential.
 To do that, we are using orderbook data provided by exchanges and computing them to have a fair mid-price (the average between best bid and best ask.)
 
 
-# GOALS
+### GOALS
 Expose a REST API which gives us the global price index of the trading pair BTC/USDT, computed from 3 different exchanges :
 
 1. Binance
 2. Kraken
 3. Huobi
 
-# SPECIFICATIONS
+### SPECIFICATIONS
 Your mission, if you accept it, will be to fetch the BTC/USDT order book from the 3 exchanges written above; compute for each orderbook a mid-price and finally return an average of these mid-prices. You have to take into consideration that you may add new exchanges later.
 
-# DOCUMENTATIONS
-Binance api documentation: https://developers.binance.com/docs/binance-spot-api-docs/web-socket-streams
-Kraken api documentation: https://docs.kraken.com/api/
-Huobi api documentation: https://www.htx.com/en-us/opend/newApiPages
+### DOCUMENTATIONS
+- Binance api documentation: 
+  -https://developers.binance.com/docs/binance-spot-api-docs/web-socket-streams
+- Kraken api documentation: 
+  - https://docs.kraken.com/api/
+- Huobi api documentation: 
+  - https://www.htx.com/en-us/opend/newApiPages
 
-### TECHNOLOGY STACK
+## TECHNOLOGY STACK
 - NodeJS
 - TypeScript
 - Express.JS
 
-### ADDED EXTRAS
+## ADDED EXTRAS
 - Extended beyond BTC/USDT to any trading pair that exists, e.g LTC/USDT, ETH/USDT
 - Included Mid Price from every exchange consulted in api response
 - Included health endpoint for uptime monitoring
 - Added Dockerfile for easier deployment 
 
-### FUTURE IMPROVEMENTS
+## FUTURE IMPROVEMENTS
 - Monitoring of rest API calls to avoid rate limiting
 - Addition of more centralized exchanges and their apis
 - Integration of decentralized exchanges / smartcontracts
 
-### HOW IT WORKS
+## HOW IT WORKS
 To use the application execute the following commands via curl, postman or a simple browser page.
 
 1. Sample Response
@@ -64,13 +79,13 @@ http://localhost:3000/price/BTCUSDT
 curl "http://localhost:3000/price/BTCUSDT"
 ```
 
-4. To add / check price of a new tradingpair:
+4. To add and check price of a new tradingpair:
 ```
 curl "http://localhost:3000/price/ETHUSDT"
 ```
 
 
-### RUN LOCALLY
+## RUN LOCALLY
 To run the project locally execute the following commands
 
 1. Clone repo to your machine (use SSH) and change to flowdesk-crypto-orderbook-api directory
@@ -103,7 +118,7 @@ npm run build
 npm run start
 ```
 
-### RUN DOCKER
+## RUN DOCKER
 To run the project via docker execute the following commands
 
 1. Clone repo to your machine (use SSH) and change to flowdesk-crypto-orderbook-api directory

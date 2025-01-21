@@ -51,7 +51,9 @@ Your mission, if you accept it, will be to fetch the BTC/USDT order book from th
 ## FUTURE IMPROVEMENTS
 - Monitoring of rest API calls to avoid rate limiting
 - Addition of more centralized exchanges and their apis
+- Addition of historical global prices for decision making
 - Integration of decentralized exchanges / smartcontracts
+- Addition of candlestick and chart patterns for trend monitoring
 
 ## HOW IT WORKS
 To use the application execute the following commands via curl, postman or a simple browser page.
